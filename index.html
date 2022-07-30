@@ -4,14 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Papers & Scissors</title>
+    <title>Rock, Pappers or Scissors</title>
 </head>
 <body>
-     <scrip>
+    <script>
 
-        
+        function getComputerChoice(){
+           const x = Math.floor(Math.random()*4);
+            if (x===3){
+                return 'Rocks';
+            } else if (x===2){
+                return 'Pappers';
+            } else {
+                return 'Scissors';
+            }
+        }
 
-    </scrip>
+        function playRound(playerSelection, computerSelection){
+            const rock = 'ROCKS';
+            const papper = 'PAPPERS';
+            const scissor = 'SCISSORS';
+            if (playerSelection === computerSelection){
+                return 'It\'s a tie!';
+            } else if ((playerSelection === rock && computerSelection === papper) ||
+                      (playerSelection === papper && computerSelection === scissor) ||
+                      (playerSelection === scissor && computerSelection === rock)) {
+                return 'You lose!';
+            }
+              else if ((playerSelection === rock && computerSelection === scissor) ||
+                      (playerSelection === scissor && computerSelection === papper) ||
+                      (playerSelection === papper && computerSelection === rock)) {
+                return 'You win!';
+            }
+        }
+
+
+        function game(){
+            let scorePlayer = 0;
+            let scoreComputer = 0;
+            let tieScore = 0;
+            for (let i = 0; i < 5; i++){
+                const playerSelection = prompt('Choose rocks, pappers or scissors', '').toUpperCase();
+                const computerSelection = getComputerChoice().toUpperCase();
+                playRound(playerSelection, computerSelection);
+                if (playerSelection === computerSelection){
+                    tieScore++
+                } else if ((playerSelection === "ROCKS" && computerSelection === "SCISSORS") ||
+                      (playerSelection === "SCISSORS" && computerSelection === "PAPPERS") ||
+                      (playerSelection === "PAPPERS" && computerSelection === "ROCKS")){
+                    scorePlayer++
+                } else scoreComputer++;
+    
+            } 
+            if (scoreComputer === scorePlayer){
+                return "Your score is " + scorePlayer + " and computer score is " + scoreComputer + ", so is a tie!";
+            } else if (scorePlayer > scoreComputer){
+                return "You win " + scorePlayer + " - " + scoreComputer + " against computer!";
+            } else if (scoreComputer > scorePlayer){
+                return "You lose " + scorePlayer + " - " + scoreComputer + " against computer!";
+            }
+        }
+
+        console.log(game());
+
+    </script>
     
 </body>
 </html>
