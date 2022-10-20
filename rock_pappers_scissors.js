@@ -71,11 +71,11 @@ function globalScores(playerSelection, computerSelection){
 function getWinner(scorePlayer, scoreComputer, tieScore){
     if (scorePlayer === 5){
         resultCont.innerHTML = "You win! " + "<br/><br/>" + "Your score is = " + scorePlayer + "<br/><br/>" 
-        + "The computer score is = " + scoreComputer + "<br/><br/>" + "The amount of ties is " + tieScore;
+        + "The computer score is = " + scoreComputer + "<br/><br/>" + "The amount of ties is = " + tieScore;
     }
     if (scoreComputer === 5){
-        resultCont.innerHTML = "Computer wins " + "<br/><br/>" + "Your score is = " + scorePlayer + "<br/><br/>" 
-        + "The computer score is = " + scoreComputer + "<br/><br/>" + "The amount of ties is " + tieScore;
+        resultCont.innerHTML = "Computer wins! " + "<br/><br/>" + "Your score is = " + scorePlayer + "<br/><br/>" 
+        + "The computer score is = " + scoreComputer + "<br/><br/>" + "The amount of ties is = " + tieScore;
     } 
 }
 

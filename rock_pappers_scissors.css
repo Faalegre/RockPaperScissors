@@ -105,22 +105,22 @@ button:active {
     border-color: #8d8181;
     background-color: #0e0e0f;
     color:#8d8181;
-    font-size: 22px ;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 24px ;
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace, sans-serif;
     font-weight: bold;
 }
 
 #game-container{
     text-align: center;
     margin: 2% 20%;
-    padding: 10% 2%;
+    padding: 5% 2%;
     border-radius: 20px;
     border-style: double; 
     border-width: 10px;
     border-color: #8d8181;
     background-color: #0e0e0f;
     color:#8d8181;
-    font-size: 22px ;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 24px ;
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace, sans-serif;
     font-weight: bold;
 }
