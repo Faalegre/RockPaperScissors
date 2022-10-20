@@ -1,0 +1,126 @@
+* body {
+    background-color: #0e0e0f;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#button-container {
+    margin: 2% 20%;
+    padding: 5% 2%;
+    border-radius: 20px;
+    border-style: double; 
+    border-width: 10px;
+    border-color: #8d8181;
+    background-color: #0e0e0f;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    border: 3px solid #8d8181;
+    outline: 3px solid #8d8181;
+    outline-offset: -9px;
+    background-color: #0e0e0f;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+#rockBtn{
+    background-image: url('./images/rock.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+#rockBtn:hover{
+    background-color: #8d8181;
+    background-image: url('./images/rock2.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    border: 3px solid #0e0e0f;
+    outline: 3px solid #0e0e0f;
+    box-shadow: 0 0 5px #8d8181, 0 0 6px #8d8181, 0 0 7px #8d8181;
+}
+
+
+#papperBtn{
+    background-image: url('./images/papper.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+#papperBtn:hover{
+    background-color: #8d8181;
+    background-image: url('./images/papper2.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    border: 3px solid #0e0e0f;
+    outline: 3px solid #0e0e0f;
+    box-shadow: 0 0 5px #8d8181, 0 0 6px #8d8181, 0 0 7px #8d8181;
+}
+
+#scissorBtn{
+    background-image: url('./images/scissor.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+#scissorBtn:hover{
+    background-color: #8d8181;
+    background-image: url('./images/scissor2.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    border: 3px solid #0e0e0f;
+    outline: 3px solid #0e0e0f;
+    box-shadow: 0 0 5px #8d8181, 0 0 6px #8d8181, 0 0 7px #8d8181;
+}
+
+#resultContainer {
+    text-align: center;
+    margin: 2% 20%;
+    padding: 3% 2%;
+    border-radius: 20px;
+    border-style: double; 
+    border-width: 10px;
+    border-color: #8d8181;
+    background-color: #0e0e0f;
+    color:#8d8181;
+    font-size: 22px ;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#game-container{
+    text-align: center;
+    margin: 2% 20%;
+    padding: 10% 2%;
+    border-radius: 20px;
+    border-style: double; 
+    border-width: 10px;
+    border-color: #8d8181;
+    background-color: #0e0e0f;
+    color:#8d8181;
+    font-size: 22px ;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
