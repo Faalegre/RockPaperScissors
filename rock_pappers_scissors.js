@@ -92,16 +92,16 @@ function getWinner(scorePlayer, scoreComputer, tieScore){
 
 function showSelection(playerSelection, computerSelection){
     if (playerSelection === "ROCKS"){
-        playerSelection = '<img src="./images/rock.svg" style="width:200px; height:200px;" />';
+        playerSelection = '<img src="./images/rock.svg" style="max-width:100%;, max-height:100%;" />';
     } else if (playerSelection === "PAPPERS"){
-        playerSelection = '<img src="./images/papper.svg" style="width:200px; height:200px;" />';
-    } else playerSelection = '<img src="./images/scissor.svg" style="width:200px; height:200px;" />';
+        playerSelection = '<img src="./images/papper.svg" style="max-width:100%;, max-height:100%;" />';
+    } else playerSelection = '<img src="./images/scissor.svg" style="max-width:100%;, max-height:100%;" />';
 
     if (computerSelection === "ROCKS"){
-        computerSelection = '<img src="./images/rock.svg" style="width:200px; height:200px;" />';
+        computerSelection = '<img src="./images/rock.svg" style="max-width:100%;, max-height:100%;" />';
     } else if (computerSelection === "PAPPERS"){
-        computerSelection = '<img src="./images/papper.svg" style="width:200px; height:200px;" />';
-    } else computerSelection = '<img src="./images/scissor.svg" style="width:200px; height:200px;" />';
+        computerSelection = '<img src="./images/papper.svg" style="max-width:100%;, max-height:100%;" />';
+    } else computerSelection = '<img src="./images/scissor.svg" style="max-width:100%;, max-height:100%;" />';
 
     gameContainer.innerHTML = `<div class="gameContainer">${playerSelection}</div>` + " VS " + 
     `<div class="gameContainer">${computerSelection}</div>`;
